@@ -38,3 +38,21 @@ part: RC1206FR-0749R9L
 digikey part number: 311-49.9FRCT-ND
 
 https://www.digikey.com/en/products/detail/yageo/RC1206FR-0749R9L/728942
+
+# 332 ohm Resistor 
+
+package: 1206 
+
+part: RK73H2BTTD3320F
+digikey part number: 2019-RK73H2BTTD3320FCT-ND
+
+https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H2BTTD3320F/10235876
+
+# 22nF Ceramic Capacitor 
+
+package: 1206
+
+part: 1206B223K500CT
+digikey part number: 1292-1609-1-ND
+
+https://www.digikey.com/en/products/detail/walsin-technology-corporation/1206B223K500CT/9355106
