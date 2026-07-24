@@ -107,4 +107,13 @@ digikey part number: 399-C1206C104K5RACTUCT-ND
 
 https://www.digikey.com/en/products/detail/kemet/C1206C104K5RACTU/411248
 
+# 10 ohm Resitor 
 
+RX data lines
+
+package: 1206
+
+part: RMCF1206JT10R0
+digikey part: RMCF1206JT10R0CT-ND
+
+https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT10R0/1757340
