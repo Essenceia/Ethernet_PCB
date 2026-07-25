@@ -96,7 +96,7 @@ digikey part number: 311-4.70KFRCT-ND
 
 https://www.digikey.com/en/products/detail/yageo/RC1206FR-074K7L/728887
 
-# 100nF Ceramic capcitor
+# 100nF (0.1uF) Ceramic capcitor
 
 Pull nRST to GND during reset
 
@@ -106,6 +106,24 @@ part: C1206C104K5RACTU
 digikey part number: 399-C1206C104K5RACTUCT-ND
 
 https://www.digikey.com/en/products/detail/kemet/C1206C104K5RACTU/411248
+
+# 1uF Cermaic capacitor
+
+package: 1206
+
+part: GMC31Y5V105Z50NT
+digikey part number: 4713-GMC31Y5V105Z50NTCT-ND
+
+https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC31Y5V105Z50NT/26225549
+
+# 470pF Ceramic Capacitor 
+
+package: 1206 
+
+part: GMC31CG471J100NT
+digikey part number: 4713-GMC31CG471J100NTCT-ND
+
+https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC31CG471J100NT/25951946
 
 # 10 ohm Resitor 
 
@@ -117,3 +135,27 @@ part: RMCF1206JT10R0
 digikey part: RMCF1206JT10R0CT-ND
 
 https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206JT10R0/1757340
+
+# Power line Ferrit Bead
+
+Seperate VDD and AVDD for noise, 390 Ohms @ 100MHz, 2A/50mOhm
+package: 1206
+
+part: MI1206L391R-10
+digikey kay: 240-2578-1-ND
+
+https://www.digikey.com/en/products/detail/laird-signal-integrity-products/MI1206L391R-10/1287224?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAA4BmAdjAgPIBZHYAGEAXQIAcAXKEAGVeAJwCWAOwDmIAL4FYATgQhkkdNnxFSIRq0WUDnHv0hDRkmfPCKATJRVqNuAsUhk41AKyLGxkHwCwuLScgRgdn7QqqiYLtruIPZUlA5cAabmIVYEALS2jlCiAK5abmReIATKHNa5ytFqJWU6DuGcstbw0WIAJgK5YKz0GQJVILwAntw4AmhYyJ1AA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
