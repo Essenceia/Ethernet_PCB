@@ -1787,7 +1787,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x06_Top_Bottom"
+		(symbol "Connector_Generic:Conn_02x06_Odd_Even"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1807,7 +1807,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x06_Top_Bottom"
+			(property "Value" "Conn_02x06_Odd_Even"
 				(at 1.27 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1839,7 +1839,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1872,7 +1872,7 @@
 					)
 				)
 			)
-			(symbol "Conn_02x06_Top_Bottom_1_1"
+			(symbol "Conn_02x06_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 3.81 -8.89)
@@ -2035,7 +2035,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 7.62 5.08 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -2053,7 +2053,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -2071,7 +2071,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -2089,7 +2089,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -2107,7 +2107,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -2125,7 +2125,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 5.08 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -2143,7 +2143,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at 7.62 -2.54 180)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -2161,7 +2161,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_9"
 						(effects
@@ -2179,7 +2179,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 7.62 -5.08 180)
 					(length 3.81)
 					(name "Pin_10"
 						(effects
@@ -2197,7 +2197,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
+					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_11"
 						(effects
@@ -4335,7 +4335,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 66.04) (xy 96.52 66.04)
+			(xy 92.71 66.04) (xy 102.87 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5883,18 +5883,8 @@
 		)
 		(uuid "ffc5c636-8e33-4264-9167-d748c08d84ce")
 	)
-	(label "VDDA2"
-		(at 96.52 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0bf3ef20-c2dd-4a8c-a48c-97867cd89095")
-	)
 	(label "TXV"
-		(at 26.67 146.05 0)
+		(at 49.53 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6024,7 +6014,7 @@
 		(uuid "7360e560-d031-499e-bdc3-addc2dcf8c5c")
 	)
 	(label "RXD[1]"
-		(at 49.53 151.13 0)
+		(at 49.53 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6094,7 +6084,7 @@
 		(uuid "9c75423d-3b44-4f98-a70e-78ac46e605ca")
 	)
 	(label "RXERR"
-		(at 26.67 151.13 0)
+		(at 49.53 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6114,7 +6104,7 @@
 		(uuid "a05efc4e-d2b5-4dda-9ef1-1ed185b8fbd8")
 	)
 	(label "TXD[1]"
-		(at 49.53 146.05 0)
+		(at 26.67 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6153,16 +6143,6 @@
 		)
 		(uuid "a8ee6aef-ceec-4a6e-bd01-d91f935e9728")
 	)
-	(label "VDDA2"
-		(at 170.18 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a96f8ca0-88e9-46f0-94a2-4fafc874428d")
-	)
 	(label "Clk"
 		(at 26.67 143.51 0)
 		(effects
@@ -6194,7 +6174,7 @@
 		(uuid "d1ca3ea7-ae9a-4648-81fa-60d251f87c1f")
 	)
 	(label "RXD[0]"
-		(at 49.53 148.59 0)
+		(at 26.67 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6264,7 +6244,7 @@
 		(uuid "ed6ee373-4522-44cc-996a-f481ef57eab5")
 	)
 	(label "TXD[0]"
-		(at 49.53 143.51 0)
+		(at 49.53 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6295,7 +6275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "010f27ca-9ed3-4ee5-9834-dea579c30f4f")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR03"
 			(at 49.53 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6355,7 +6335,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR014")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6373,7 +6353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0175fb7f-f67b-493e-8b59-154b23b80885")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR018"
 			(at 165.1 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6433,7 +6413,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR023")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6451,7 +6431,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "140987fe-bd7d-4f22-93a0-9d29f2ddee6e")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR012"
 			(at 106.68 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -6511,7 +6491,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR017")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6529,7 +6509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1aec490c-c9d8-4924-a50e-e878f23ec28c")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR023"
 			(at 207.01 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -6589,7 +6569,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR020")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -6606,8 +6586,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "20c4399b-0108-438e-a36c-850699b56f27")
-		(property "Reference" "R17"
-			(at 42.164 99.06 90)
+		(property "Reference" "R5"
+			(at 45.974 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6617,7 +6597,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 41.656 94.488 90)
+			(at 38.354 95.504 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6648,7 +6628,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 41.91 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6668,7 +6648,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R17")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6686,7 +6666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "279889b2-4827-4423-8588-f23adf63b8aa")
-		(property "Reference" "C8"
+		(property "Reference" "C10"
 			(at 185.42 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6730,7 +6710,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 181.61 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -6750,7 +6730,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C8")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6767,7 +6747,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2981dfab-7e27-4475-8c07-89e439c0652a")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 78.74 182.626 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6828,7 +6808,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -6846,7 +6826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cc673ad-7f2a-4ee2-8421-1a546862bc5a")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR01"
 			(at 20.32 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -6906,7 +6886,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR010")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -6923,7 +6903,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a46e1a0-5e9d-4307-8f7a-1e0b98f24629")
-		(property "Reference" "R3"
+		(property "Reference" "R12"
 			(at 121.92 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6985,7 +6965,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R3")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -7003,7 +6983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ff1842d-7de8-4aa7-bbbb-1a3f7a84161a")
-		(property "Reference" "C11"
+		(property "Reference" "C6"
 			(at 163.83 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7047,7 +7027,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 160.02 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7067,7 +7047,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C11")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -7085,7 +7065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41117da4-8e5c-4b3d-8df9-470e3ea6a646")
-		(property "Reference" "C7"
+		(property "Reference" "C11"
 			(at 195.58 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7129,7 +7109,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 191.77 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7149,7 +7129,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C7")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7167,7 +7147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4831161f-a237-4eb6-878a-488846a2741c")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 90.17 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -7227,7 +7207,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -7245,7 +7225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b5e9993-c00f-408d-bbc7-89fe5b64eab4")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR07"
 			(at 85.09 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7305,7 +7285,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR024")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -7323,7 +7303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c0ffc03-331a-436f-b914-3cd3f6116697")
-		(property "Reference" "C12"
+		(property "Reference" "C8"
 			(at 173.99 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7367,7 +7347,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 170.18 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7387,7 +7367,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C12")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -7405,7 +7385,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56176f28-abb0-4c38-ad74-a54ec2353ca7")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR08"
 			(at 90.17 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7465,7 +7445,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR016")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7483,7 +7463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ac47fad-87c8-4e48-b6b3-c31e305c5a13")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR021"
 			(at 191.77 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7543,7 +7523,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR05")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7561,7 +7541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f896a8f-482d-4d14-9a46-92490816abe2")
-		(property "Reference" "C3"
+		(property "Reference" "C7"
 			(at 167.64 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7605,7 +7585,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 163.83 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7625,7 +7605,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C3")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -7643,7 +7623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60d1205c-f237-4b68-8435-ff4bc8ae97d7")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR05"
 			(at 67.31 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -7703,7 +7683,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR026")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7721,7 +7701,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "614f6749-ce99-4a5a-bf9c-0946d4213e7f")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR013"
 			(at 115.57 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7781,7 +7761,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR025")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7799,7 +7779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6218e9d1-3076-4d3f-a479-7ac98a00eaa0")
-		(property "Reference" "C5"
+		(property "Reference" "C12"
 			(at 195.58 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7843,7 +7823,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 191.77 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7863,7 +7843,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C5")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -7880,7 +7860,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6541b46c-39e0-421b-b29a-13753fc71b1a")
-		(property "Reference" "R18"
+		(property "Reference" "R10"
 			(at 66.04 180.594 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7922,7 +7902,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 68.58 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -7942,7 +7922,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R18")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7960,7 +7940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f6b041b-3227-47cd-a50b-12bf170df376")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR014"
 			(at 124.46 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -8020,7 +8000,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR09")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8038,7 +8018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fae3fc4-4a92-485f-84d9-3e75254848b6")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR020"
 			(at 186.69 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8098,7 +8078,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR019")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8115,7 +8095,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "720db1bf-678a-47bd-96aa-f90a19626a50")
-		(property "Reference" "R10"
+		(property "Reference" "R6"
 			(at 46.99 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8157,7 +8137,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 49.53 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -8177,7 +8157,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R10")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8195,7 +8175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73db2f55-0a35-4ed7-ba80-0ad2c8e523b3")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR027"
 			(at 262.89 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -8255,7 +8235,85 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR02")
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDDA")
+		(at 102.87 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76f5fdf0-6a98-49d3-b28c-8926579f34cb")
+		(property "Reference" "#PWR028"
+			(at 102.87 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 102.87 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
+			(at 102.87 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d0ddf59-108e-4289-b162-2b243224fa70")
+		)
+		(instances
+			(project "biscotti"
+				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -8272,7 +8330,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "779e940c-83b5-438c-a9d5-72d9ebd6a4e0")
-		(property "Reference" "R1"
+		(property "Reference" "R18"
 			(at 256.286 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8334,7 +8392,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R1")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -8351,7 +8409,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78ae0ddc-6acd-4195-9ada-c16e7b04d1db")
-		(property "Reference" "R5"
+		(property "Reference" "R15"
 			(at 137.16 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8413,7 +8471,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R5")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -8431,7 +8489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cfde3f8-685a-4d10-b2cc-abd4fa66f034")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR016"
 			(at 158.75 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8491,7 +8549,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR01")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -8509,7 +8567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e8a6a5a-e7d5-4d83-8fbe-093fb167fdfc")
-		(property "Reference" "C14"
+		(property "Reference" "C3"
 			(at 124.46 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8553,7 +8611,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 120.65 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -8573,7 +8631,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C14")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -8590,7 +8648,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8222f26d-3b59-4fa1-8f98-e1f5c348b37a")
-		(property "Reference" "R11"
+		(property "Reference" "R8"
 			(at 53.34 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8632,7 +8690,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 55.88 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -8652,7 +8710,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R11")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8670,7 +8728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84beea38-7fc4-444d-99a0-be034ce3ed37")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR022"
 			(at 191.77 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -8730,7 +8788,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR06")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8747,7 +8805,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88b29c1d-198f-46e2-9b16-42ee60f0b9e0")
-		(property "Reference" "R2"
+		(property "Reference" "R17"
 			(at 256.286 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8809,7 +8867,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R2")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8827,7 +8885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88b3a260-f29a-47de-b69c-72def418af75")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR010"
 			(at 100.33 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -8887,117 +8945,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x06_Top_Bottom")
-		(at 38.1 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d262dc4-c98e-42d4-a84d-2fc13842fe3b")
-		(property "Reference" "J2"
-			(at 39.37 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x06_Top_Bottom"
-			(at 39.37 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal"
-			(at 38.1 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pmod connector"
-			(at 38.1 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "12"
-			(uuid "3494362f-9808-4eb7-bb0b-263fc87f5421")
-		)
-		(pin "10"
-			(uuid "124ebdc7-1a93-4b17-9ab4-46910965a502")
-		)
-		(pin "1"
-			(uuid "8e3b6bde-3605-40e2-87d1-31e3c77a9ac9")
-		)
-		(pin "2"
-			(uuid "6b67d7a0-acc3-4165-b67a-3cac715bea2d")
-		)
-		(pin "4"
-			(uuid "3bddd7dc-1633-4e28-9b50-07e42e39c9dd")
-		)
-		(pin "5"
-			(uuid "012e05d7-0b17-4c37-ba61-2d391c3f6ae5")
-		)
-		(pin "6"
-			(uuid "2f53e2f6-32e7-4e62-9355-efefbd9577e9")
-		)
-		(pin "7"
-			(uuid "3c207145-a9ad-4ad5-9779-9262f8e091cd")
-		)
-		(pin "8"
-			(uuid "07c09354-4dd9-44ea-99a2-a4a303db1641")
-		)
-		(pin "9"
-			(uuid "2fbd4ef3-4acd-40f7-b8af-f177dc29be42")
-		)
-		(pin "3"
-			(uuid "53b3b599-0f28-4447-8f90-3fc92980e8cb")
-		)
-		(pin "11"
-			(uuid "aa65d3f4-16fd-4972-9583-a41414f67523")
-		)
-		(instances
-			(project "biscotti"
-				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "J2")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9015,7 +8963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f06b0fc-2ff1-4c1f-909d-f168f40e8fab")
-		(property "Reference" "C1"
+		(property "Reference" "C4"
 			(at 142.24 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9059,7 +9007,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 138.43 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9079,7 +9027,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C1")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -9097,7 +9045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9370da60-9079-4182-b5be-78d483b2a399")
-		(property "Reference" "C2"
+		(property "Reference" "C5"
 			(at 154.94 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9141,7 +9089,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 151.13 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9161,7 +9109,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C2")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -9179,7 +9127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ba21a92-7298-4bcd-afae-bd428edc0d33")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR02"
 			(at 49.53 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9239,7 +9187,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR013")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -9256,7 +9204,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9eccc3bf-16e6-4faf-84c7-f1da4dec2aa5")
-		(property "Reference" "R13"
+		(property "Reference" "R9"
 			(at 53.34 101.854 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9298,7 +9246,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9318,7 +9266,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R13")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9335,7 +9283,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f02dca9-e6a8-4586-b586-c5dc22dafea3")
-		(property "Reference" "R7"
+		(property "Reference" "R13"
 			(at 121.92 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9397,7 +9345,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R7")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -9414,8 +9362,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a0aafc24-2528-4c7f-8120-69193320f3ca")
-		(property "Reference" "R14"
-			(at 42.164 91.44 90)
+		(property "Reference" "R2"
+			(at 45.974 90.424 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9425,7 +9373,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 41.656 86.868 90)
+			(at 38.354 87.884 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9456,7 +9404,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 41.91 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9476,7 +9424,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R14")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -9494,7 +9442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2b11a84-2883-47ec-ac0d-db952e4ee830")
-		(property "Reference" "C10"
+		(property "Reference" "C14"
 			(at 215.9 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9538,7 +9486,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 212.09 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -9558,7 +9506,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C10")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -9576,7 +9524,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a33e4bbb-7ca2-4877-a674-46eb4c4e0181")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR026"
 			(at 262.89 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9636,7 +9584,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR03")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -9653,7 +9601,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a60ed34a-024d-4db8-bb44-0724ddd83705")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 97.79 174.244 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9695,7 +9643,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 100.33 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -9715,7 +9663,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -9732,8 +9680,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6801347-c50b-487e-abe9-4b9b3651db04")
-		(property "Reference" "R15"
-			(at 42.164 93.98 90)
+		(property "Reference" "R3"
+			(at 45.72 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9743,7 +9691,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 41.656 89.408 90)
+			(at 38.354 90.424 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9774,7 +9722,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 41.91 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -9794,7 +9742,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R15")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -9812,7 +9760,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7d053f8-928a-4858-91b1-3e251f0f4368")
-		(property "Reference" "C4"
+		(property "Reference" "C9"
 			(at 180.34 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9856,7 +9804,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 176.53 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9876,7 +9824,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C4")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9894,7 +9842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a80e69fa-8e46-4905-aa57-9b56f3500511")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR017"
 			(at 165.1 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9954,7 +9902,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR022")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9972,7 +9920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a850dadb-254c-470c-8721-10e8e143ae15")
-		(property "Reference" "C6"
+		(property "Reference" "C1"
 			(at 104.14 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10016,7 +9964,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 100.33 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -10036,7 +9984,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C6")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -10054,7 +10002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4f6fa22-cc46-4a50-807d-cb82e8398d8b")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011"
 			(at 100.33 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -10114,7 +10062,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -10132,7 +10080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b50f9cc2-a120-42ab-8fce-158deb7d3345")
-		(property "Reference" "C13"
+		(property "Reference" "C2"
 			(at 111.76 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10176,7 +10124,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 107.95 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -10196,7 +10144,117 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C13")
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x06_Odd_Even")
+		(at 38.1 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b62f00a8-8fa2-4d19-8fb8-aefd654ffb3b")
+		(property "Reference" "J2"
+			(at 39.37 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x06_Odd_Even"
+			(at 39.37 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
+			(at 38.1 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 38.1 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "dd752ff9-c12b-4bc2-8fbe-2060791c470e")
+		)
+		(pin "11"
+			(uuid "bd1cab5d-a517-4824-b914-fe7e65377809")
+		)
+		(pin "6"
+			(uuid "a684e089-2da8-4f8f-8328-1af42003619d")
+		)
+		(pin "8"
+			(uuid "fac2dec7-23ee-4448-bae7-899e4f76b2aa")
+		)
+		(pin "10"
+			(uuid "b011f4b1-6445-4937-91fa-0dbacc02306e")
+		)
+		(pin "2"
+			(uuid "7a4dd504-f291-4643-957d-3f5594adf20e")
+		)
+		(pin "7"
+			(uuid "e68e6725-0a00-40fd-99e0-1777c9304bf8")
+		)
+		(pin "5"
+			(uuid "75429de6-2f18-47bb-9aa9-c0049ce10985")
+		)
+		(pin "12"
+			(uuid "71dda2f2-e91d-4935-8f82-d30ba56a70ef")
+		)
+		(pin "1"
+			(uuid "496ce411-564d-4bb7-a010-7634ee3a8e98")
+		)
+		(pin "9"
+			(uuid "ba49f408-2810-4f17-a133-ee682b5c6d83")
+		)
+		(pin "3"
+			(uuid "3a1aadfd-466f-4be8-b9ff-825d12374fa8")
+		)
+		(instances
+			(project "biscotti"
+				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -10213,7 +10271,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bae484a3-319a-4f90-97d3-eabd7ba07e31")
-		(property "Reference" "R4"
+		(property "Reference" "R14"
 			(at 129.54 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10275,7 +10333,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R4")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -10293,7 +10351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd428397-8bc3-4588-8535-79bd179f71ab")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 31.75 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10335,7 +10393,7 @@
 				)
 			)
 		)
-		(property "Description" "MDIO connection tap"
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 30.48 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -10355,7 +10413,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -10372,7 +10430,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c28e7d3a-70e5-411b-8206-0e7c0ea243d1")
-		(property "Reference" "R8"
+		(property "Reference" "R1"
 			(at 17.78 179.324 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10414,7 +10472,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 20.32 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -10434,7 +10492,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R8")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -10452,7 +10510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4ea68bc-ab31-4cbc-bede-b1afa0ac8e95")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR019"
 			(at 186.69 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -10512,7 +10570,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR018")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10682,7 +10740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c92fde8c-e5c0-4763-aded-89660634e6df")
-		(property "Reference" "C9"
+		(property "Reference" "C13"
 			(at 205.74 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10726,7 +10784,7 @@
 				)
 			)
 		)
-		(property "Description" "Decoupling capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 201.93 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -10746,7 +10804,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "C9")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -10764,7 +10822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca610791-93dd-4755-9fa1-64109f6e586e")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR06"
 			(at 68.58 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -10824,7 +10882,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR015")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -10841,7 +10899,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d5b8fc48-c857-4780-802a-f11396bd8af0")
-		(property "Reference" "R6"
+		(property "Reference" "R16"
 			(at 146.05 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10903,7 +10961,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R6")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -10921,7 +10979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6df1c70-733e-4e9a-b03b-11f8d5a364bf")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR024"
 			(at 207.01 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -10981,7 +11039,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR021")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10998,8 +11056,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6ed9193-9567-4154-968f-825e51d068a7")
-		(property "Reference" "R16"
-			(at 42.164 96.52 90)
+		(property "Reference" "R4"
+			(at 45.974 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11009,7 +11067,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 41.656 91.948 90)
+			(at 38.354 92.964 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11040,7 +11098,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 41.91 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -11060,7 +11118,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R16")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -11078,7 +11136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dccc1e37-8625-4e09-9c5d-f5333b47db26")
-		(property "Reference" "J1"
+		(property "Reference" "J4"
 			(at 223.52 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11173,7 +11231,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "J1")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -11190,7 +11248,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0195433-b666-4b6d-ba6a-469e3f344269")
-		(property "Reference" "R12"
+		(property "Reference" "R7"
 			(at 46.99 101.854 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11232,7 +11290,7 @@
 				)
 			)
 		)
-		(property "Description" "pull-up"
+		(property "Description" "Resistor, US symbol"
 			(at 49.53 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11252,7 +11310,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "R12")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -11270,7 +11328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e073d772-9287-4a0f-b1e1-b1cd7afb05f1")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR015"
 			(at 135.89 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -11330,7 +11388,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR04")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11348,7 +11406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8e2aed4-1790-4765-bd75-0fa2acc59be7")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR025"
 			(at 234.95 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -11391,7 +11449,7 @@
 				)
 			)
 		)
-		(property "Description" "Copper pour around RJ45 connector"
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
 			(at 234.95 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -11408,7 +11466,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR07")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -11505,7 +11563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa94a052-d956-458d-8078-b3ad40c7a856")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR04"
 			(at 67.31 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -11565,7 +11623,7 @@
 		(instances
 			(project "biscotti"
 				(path "/796222de-ff45-40d3-a88b-f8fb002b9c63"
-					(reference "#PWR027")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
