@@ -142,7 +142,7 @@ Seperate VDD and AVDD for noise, 390 Ohms @ 100MHz, 2A/50mOhm
 package: 1206
 
 part: MI1206L391R-10
-digikey kay: 240-2578-1-ND
+digikey key: 240-2578-1-ND
 
 https://www.digikey.com/en/products/detail/laird-signal-integrity-products/MI1206L391R-10/1287224?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAA4BmAdjAgPIBZHYAGEAXQIAcAXKEAGVeAJwCWAOwDmIAL4FYATgQhkkdNnxFSIRq0WUDnHv0hDRkmfPCKATJRVqNuAsUhk41AKyLGxkHwCwuLScgRgdn7QqqiYLtruIPZUlA5cAabmIVYEALS2jlCiAK5abmReIATKHNa5ytFqJWU6DuGcstbw0WIAJgK5YKz0GQJVILwAntw4AmhYyJ1AA
 
